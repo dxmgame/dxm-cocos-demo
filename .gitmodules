@@ -1,0 +1,3 @@
+[submodule "dxm-cocos"]
+	path = dxm-cocos
+	url = https://github.com/dxmgame/dxm-cocos.git
