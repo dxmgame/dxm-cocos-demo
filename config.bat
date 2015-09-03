@@ -8,7 +8,6 @@ rem -------------------------------
 set JAVA_HOME=C:\Program Files\Java\jdk1.7.0_40
 set ECLIPSE_HOME=E:\adt-bundle-windows-x86\eclipse
 set ANDROID_SDK_HOME=E:\adt-bundle-windows-x86\sdk
-rem set ANDROID_NDK_HOME=E:\android-ndk-r8d
 set ANDROID_NDK_HOME=E:\android-ndk-r10e
 set ANTBIN=%ECLIPSE_HOME%\plugins\org.apache.ant_1.9.2.v201404171502\bin
 set DXM_CMAKE_V3=true
@@ -17,30 +16,39 @@ rem -------------------------------
 rem -- Tools
 rem -------------------------------
 set TEXTURE_PACKER_PATH=E:\TexturePacker\bin
-set ANDROID_HOME=%ANDROID_SDK_HOME%
-set ANDROID_NDK=%ANDROID_NDK_HOME%
+
+rem -------------------------------
+rem -- DXM 变量
+rem -------------------------------
+set DXM_PROJECT_PATH=%~dp0
+set DXM_PATH=%DXM_PROJECT_PATH%\dxm-cocos\dxm
+set DXM_COCOS_PATH=%DXM_PROJECT_PATH%\dxm-cocos\src\oslibs\cocos\cocos-src
 
 rem -- 系统自动配置
-
 rem -------------------------------
 rem -- ANDROID
 rem -------------------------------
 set ANDROID_TOOLS=%ANDROID_SDK_HOME%\tools
 set ANDROID_SDK_PLATFORM_TOOLS=%ANDROID_SDK_HOME%;%ANDROID_SDK_HOME%\platform-tools
 set ANDROID_SDK_TOOLS=%ANDROID_SDK_HOME%\tools
-set MY_ROOT=%~dp0
 set NDK_MODULE_PATH=%~dp0;%ANDROID_NDK_HOME%\sources\;
+set NDK_MODULE_PATH=%DXM_COCOS_PATH%;%DXM_COCOS_PATH%/external;%DXM_COCOS_PATH%/cocos;%NDK_MODULE_PATH%
 set NDK_MODULE_PATH=%NDK_MODULE_PATH:\=/%
-set PATH=%PATH%;%JAVA_HOME%\bin;%ANTBIN%;%ANDROID_NDK_HOME%;%ANDROID_SDK_PLATFORM_TOOLS%;%ANDROID_SDK_TOOLS%;%~dp0\dxm-cocos\dxm\build\tools\win
+set PATH=%PATH%;%JAVA_HOME%\bin;%ANTBIN%;%ANDROID_NDK_HOME%;%ANDROID_SDK_PLATFORM_TOOLS%;%ANDROID_SDK_TOOLS%;%DXM_PATH%\build\tools\win
 set CLASSPATH=.;%JAVA_HOME%\lib
+set ANDROID_HOME=%ANDROID_SDK_HOME%
+set ANDROID_NDK=%ANDROID_NDK_HOME%
 
 rem -------------------------------
-rem -- DxM
+rem -- DXM 变量
 rem -------------------------------
-set DXM_TOOLS=%~dp0\dxm-cocos\dxm\build\tools\win
-set DXM_CMAKE=%~dp0\dxm-cocos\dxm\build\cmake
-set DXM_INSTALL=%~dp0\install
+set DXM_INSTALL=%DXM_PROJECT_PATH%\install
+set DXM_TOOLS=%DXM_PATH%\build\tools\win
+set DXM_CMAKE=%DXM_PATH%\build\cmake
 
+rem -------------------------------
+rem -- DXM Compiler
+rem -------------------------------
 if defined VS140COMNTOOLS (
 	SET DXM_COMPILER_TOOLS="%VS140COMNTOOLS%"
 	SET DXM_COMPILER=vc14
@@ -82,3 +90,4 @@ if defined VS140COMNTOOLS (
 		SET DXM_GENERATOR_X64="Visual Studio 10 Win64"		
 	)
 )
+call %DXM_COMPILER_TOOLS%vsvars32.bat
