@@ -1,7 +1,7 @@
 
 
 set(DXM_CONFIG_TEMPLATE console)
-SET(DXM_CONFIG_MODULE js-simulator) 
+SET(DXM_CONFIG_MODULE moon-warriors) 
 
 
 # 
