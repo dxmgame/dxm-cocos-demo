@@ -12,7 +12,7 @@
 
 		<!-- Tell Cocos2dxActivity the name of our .so -->
 		<meta-data android:name="android.app.lib_name"
-				   android:value="moon-warriors" />
+				   android:value="js-moon-warriors" />
 
         <activity android:name=".AppActivity"
                   android:label="@string/app_name"
