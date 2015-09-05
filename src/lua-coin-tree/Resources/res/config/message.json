@@ -1,0 +1,13 @@
+
+{
+    "connect_server_failed":"连接服务器失败，请重试",
+	"other_error":"其他错误",
+	"activity_not_start":"活动还没有开始",
+	"activity_finished":"活动已经结束",
+	"shake_times_is_not_enough":"摇摇次数已经用尽",
+	"shake_reward_is_not_enough":"当天活动额度用完了",
+	"money_unit":"元"
+	"get":"获得"
+}
+
+

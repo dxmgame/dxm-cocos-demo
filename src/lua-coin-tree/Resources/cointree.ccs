@@ -1,0 +1,54 @@
+<Solution>
+  <PropertyGroup Name="cointree" Version="2.2.5.0" Type="CocosStudio" />
+  <SolutionFolder>
+    <Group ctype="ResourceGroup">
+      <RootFolder Name=".">
+        <Project Name="MainScene.csd" Type="Scene" />
+        <Image Name="HelloWorld.png" />
+        <Folder Name="png">
+          <Image Name="guanbibutton.png" />
+          <Image Name="guanbibutton2.png" />
+        </Folder>
+        <Folder Name="xiao">
+          <Image Name="resource1.png" />
+          <Image Name="resource10.png" />
+          <Image Name="resource11.png" />
+          <Image Name="resource12.png" />
+          <Image Name="resource13.png" />
+          <Image Name="resource14.png" />
+          <Image Name="resource2.png" />
+          <Image Name="resource3.png" />
+          <Image Name="resource4.png" />
+          <Image Name="resource5.png" />
+          <Image Name="resource6.png" />
+          <Image Name="resource7.png" />
+          <Image Name="resource9.png" />
+          <Image Name="resource15.png" />
+        </Folder>
+        <Image Name="resource1.png" />
+        <Image Name="resource8.png" />
+        <Project Name="MainSceneV1.csd" Type="Scene" />
+        <Project Name="LoadingLayer.csd" Type="Layer" />
+        <Project Name="RuleLayer.csd" Type="Layer" />
+        <Folder Name="yao">
+          <Image Name="Resources1.png" />
+          <Image Name="Resources2.png" />
+          <Image Name="Resources3.png" />
+          <Image Name="Resources4.png" />
+          <Image Name="Resources5.png" />
+          <Image Name="Resources6.png" />
+          <Image Name="Resources7.png" />
+        </Folder>
+        <Project Name="HistoryRewardPop.csd" Type="Layer" />
+        <Project Name="HistoryRewardPopwords.csd" Type="Layer" />
+        <Project Name="Tip.csd" Type="Layer" />
+        <Project Name="GoldAnimation.csd" Type="Layer" />
+        <Project Name="Tip3.csd" Type="Layer" />
+        <Project Name="Tip2.csd" Type="Layer" />
+        <Project Name="Tip4.csd" Type="Layer" />
+        <Project Name="SceneLoading.csd" Type="Scene" />
+        <TTF Name="default.ttf" />
+      </RootFolder>
+    </Group>
+  </SolutionFolder>
+</Solution>
