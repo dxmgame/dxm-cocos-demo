@@ -1,6 +1,3 @@
-if nil == ccui then
-    return
-end
 
 LAYOUT_COLOR_NONE                      = ccui.LayoutBackGroundColorType.none
 LAYOUT_COLOR_SOLID                     = ccui.LayoutBackGroundColorType.solid

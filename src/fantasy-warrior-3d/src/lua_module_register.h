@@ -12,6 +12,7 @@
 #include "audioengine/lua_cocos2dx_audioengine_manual.h"
 #include "physics3d/lua_cocos2dx_physics3d_manual.h"
 #include "navmesh/lua_cocos2dx_navmesh_manual.h"
+#include "custom/lua_cocos2dx_custom.hpp"
 
 static int lua_module_register(lua_State* L)
 {
@@ -25,6 +26,7 @@ static int lua_module_register(lua_State* L)
     register_spine_module(L);
     register_cocos3d_module(L);
     register_audioengine_module(L);
+    register_all_cocos2dx_custom(L);
 #if CC_USE_3D_PHYSICS && CC_ENABLE_BULLET_INTEGRATION
     register_physics3d_module(L);
 #endif

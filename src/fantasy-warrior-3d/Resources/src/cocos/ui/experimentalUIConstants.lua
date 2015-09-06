@@ -1,6 +1,5 @@
-if nil == ccexp then
-	return
-end
+ccexp = ccexp or {}
+
 
 ccexp.VideoPlayerEvent = {
     PLAYING = 0,

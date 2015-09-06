@@ -1,7 +1,3 @@
-if nil == cc.CCBReader then
-    return
-end
-
 ccb = ccb or {}
 
 function CCBReaderLoad(strFilePath,proxy,owner)

@@ -1,6 +1,3 @@
-if nil == cc.SimpleAudioEngine then
-    return
-end
 -- This is the DeprecatedCocosDenshionClass
 
 DeprecatedCocosDenshionClass = {} or DeprecatedCocosDenshionClass

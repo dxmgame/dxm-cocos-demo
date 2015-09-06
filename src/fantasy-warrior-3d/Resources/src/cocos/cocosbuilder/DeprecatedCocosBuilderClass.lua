@@ -1,6 +1,3 @@
-if nil == cc.CCBProxy then
-	return
-end
 -- This is the DeprecatedCocosBuilderClass
 
 DeprecatedCocosBuilderClass = {} or DeprecatedCocosBuilderClass

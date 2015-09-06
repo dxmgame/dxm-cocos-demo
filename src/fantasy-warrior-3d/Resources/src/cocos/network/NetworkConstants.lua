@@ -1,6 +1,5 @@
-if nil == cc.XMLHttpRequest then
-    return
-end
+
+cc = cc or {}
 
 cc.WEBSOCKET_OPEN     = 0
 cc.WEBSOCKET_MESSAGE  = 1

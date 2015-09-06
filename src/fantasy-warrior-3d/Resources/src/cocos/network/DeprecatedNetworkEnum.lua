@@ -1,7 +1,3 @@
-if nil == cc.XMLHttpRequest then
-    return
-end
-
 _G.kWebSocketScriptHandlerOpen  = cc.WEBSOCKET_OPEN
 _G.kWebSocketScriptHandlerMessage = cc.WEBSOCKET_MESSAGE
 _G.kWebSocketScriptHandlerClose   = cc.WEBSOCKET_CLOSE
