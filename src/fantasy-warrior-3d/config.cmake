@@ -1,7 +1,7 @@
 
 
 set(DXM_CONFIG_TEMPLATE console)
-SET(DXM_CONFIG_MODULE lua-coin-tree) 
+SET(DXM_CONFIG_MODULE fantasy-warrior-3d) 
 
 
 # 
